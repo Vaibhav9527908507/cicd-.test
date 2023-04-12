@@ -6,15 +6,15 @@ phases:
           - echo installing webserver
           - sudo apt update
           - sudo apt install apache2 -y
-      build:
+   build:
         commands:
            - echo building file
            - cp index.html /var/www/html
            
-        post_build:
+   post_build:
           commands:
           - echo configured
           
-   artifacts:
+ artifacts:
       files:
           _ "**/*"
