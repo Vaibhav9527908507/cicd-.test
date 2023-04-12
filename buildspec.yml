@@ -12,8 +12,9 @@ phases:
            - cp index.html /var/www/html
            
    post_build:
-          commands:
-          - echo configured
+        commands:
+           - echo configured
+          
  artifacts:
       files:
           _ "**/*"
